@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        body{
+            background:linear-gradient(lavender,lightblue);
+            font-size: 20px;
+            
+        }
+        .header {
+            color:black;
+            text-align: center;
+        }
+         p {
+            width: 50%;
+            float: left;
+            padding: 10px;
+            align-items: center;
+            
+        }
+        #p1 {
+            width: 50%;
+            height: 100%;
+            background-color:white;
+            border: solid 2px black;
+            margin-left: 25%;
+            padding:20px,0;
+            border-radius: 15px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media screen and (max-width:768px) {
+            #p1 {
+                width: 90%;
+                margin:0;
+                margin-bottom: 25px;
+                margin-left: 13px;
+            }
+        }
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="name">Shree Vidhya B</div>  
+        <div class="div-toggle">
+            <input type="checkbox" class="bar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar">
+            <li><a href="index.html">About</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="interests.html">Interests</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="header">
+    <h1>My Experience</h1>
+</div>
+<div class="row">
+     <p id="p1">
+        <strong>Three months internship at XYZ company as an assistant in web developing.</strong><br><br>
+        Learned various design patterns and their applications.
+        Trained in designing and developing web applications.
+        Tried to implement lool-alike websites
+     </p>
+<p id="p1">
+        <strong>Six months as a web developer in the same company.</strong><br><br>
+        Collaborated with designers and back-end developers for integration of web applications.
+        Attended meetings to create user interfaces.
+        Was part of designing and implementing a online shoping website for the company.
+</p>
+</div>
+<script>
+    const divToggle = document.querySelector('.div-toggle');
+    const menu = document.querySelector('.navbar');
+    divToggle.addEventListener('click', () => {
+        divToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+    })
+
+
+</script>
+</body>
+
+</html>

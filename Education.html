@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+         body{
+            background:linear-gradient(lavender,lightblue);
+            font-size: 20px;
+        }
+        .header {
+            color:black;
+            text-align: center;
+        }
+        p {
+            width: 50%;
+            float: left;
+            padding: 10px;
+            align-items: center;
+        }
+        #p1 {
+            width: 50%;
+            height: 100%;
+            background-color:white;
+            border: solid 2px black;
+            text-align: center;
+            padding:20px,0;
+            border-radius: 15px;
+            margin-left: 25%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           
+        }
+       
+        @media screen and (max-width:768px) {
+            #p1 {
+               
+                width: 90%;
+                margin:0;
+                margin-bottom: 25px;
+                margin-left: 13px;
+            }
+        }
+        h2{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="name">Shree Vidhya B</div>  
+            <div class="div-toggle">
+                <input type="checkbox" class="bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">About</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="interests.html">Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header">
+        <h1>Educational Qualifications</h1>
+    </div>
+    
+            
+                        
+                   <div class="row">
+                    <p id="p1">
+                    B.tech in CS (Hons) <br>
+                    RV University, Mysore road<br> 
+                    2023(Current)
+                    </p>
+                    <p id="p1">
+                    12th Standard - PCMB<br>
+                    St.Joseph's PU College, Bangalore <br>
+                    2022
+                </p>
+                    <p id="p1">
+                    10th Standard<br>
+                    Padmavathi Montessori School, Bangalore <br>
+                    2020
+                   </div>
+                </p>
+        
+                <script>
+                    const divToggle = document.querySelector('.div-toggle');
+                    const menu = document.querySelector('.navbar');
+                    divToggle.addEventListener('click', () => {
+                        divToggle.classList.toggle('active');
+                        menu.classList.toggle('active');
+                    })
+                
+                
+                </script>  
+</body>
+</html>

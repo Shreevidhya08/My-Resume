@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body {
+      background: linear-gradient(lavender, lightblue);
+      font-size: 20px;
+    }
+    .header {
+            color:black;
+            text-align: center;
+        }
+
+    .interests-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .interest-card {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      margin: 20px;
+
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      color:rgb(32, 184, 235);
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    p{
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="name">Shree Vidhya B</div>
+      <div class="div-toggle">
+        <input type="checkbox" class="bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">About</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="#interests">Interests</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="header">
+    <h1>My Interests</h1>
+</div>
+  <div class="interests-container">
+
+    <div class="interest-card">
+      <h2>Music</h2>
+      <p>I am interested in music.I enjoy listening to various genres of music, from pop to classical.</p>
+    </div>
+    <div class="interest-card">
+      <h2>Art and Crafts</h2>
+      <p>I love to DIYs and I have upcycled many materials by turning them into a piece of art.</p>
+    </div>
+    <div class="interest-card">
+      <h2>Herbarium</h2>
+      <p>I easily get attracted to flowers easily and usually collect them, and preserve them</p>
+    </div>
+  </div>
+  <script>
+    const divToggle = document.querySelector('.div-toggle');
+    const menu = document.querySelector('.navbar');
+    divToggle.addEventListener('click', () => {
+      divToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+    })
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.bar {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background-color: black;
+}
+
+nav.logo a {
+    color: aliceblue;
+}
+
+nav .navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .navbar li {
+    margin: 0 10px;
+
+}
+
+nav .navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    transition:all .45s ease;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    nav .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        background-color: black;
+        z-index: 1;
+    }
+
+    nav .navbar li {
+        width: 100%;
+    }
+
+    nav .navbar li a {
+        padding: 10px;
+        color: white;
+        display: block;
+    }
+
+    nav .div-toggle {
+        display: block;
+    }
+
+    nav .div-toggle span {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    nav .div-toggle.active+.navbar {
+        display: flex;
+    }
+
+}
+.name{
+    color:white;
+    font-size: 30px;
+}
